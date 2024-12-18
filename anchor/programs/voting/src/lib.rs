@@ -9,7 +9,7 @@ pub mod voting {
     use super::*;
 
     pub fn initialize_poll(ctx: Context<InitializePoll>,
-                             poll_id: u64,
+                            poll_id: u64,
                             poll_start:u64,
                             poll_description: String,
                             poll_end:u64) -> Result<()>{
@@ -50,3 +50,4 @@ pub struct Poll {
     pub poll_end: u64,
     pub candidate_amount: u64,
 }
+
